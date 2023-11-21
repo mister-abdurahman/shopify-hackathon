@@ -124,14 +124,11 @@
     </header>
 
     <main>
-      <div class="trial_card">
+      <section class="trial_card">
         <p class="trial_card--text">
           Extend your trial for $1/month for 3 months on select plans.
         </p>
-        <div class="trial_card--right">
-          <button class="trial_card--btn">Select a plan</button>
-        </div>
-
+        <button class="trial_card--btn">Select a plan</button>
         <svg
           class="cancel-trial-icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -145,9 +142,9 @@
             fill="#E3E3E3"
           />
         </svg>
-      </div>
+      </section>
 
-      <dl class="setup-guide">
+      <section class="setup-guide">
         <h4>Setup guide</h4>
         <p class="setup-guide-para">
           Use this personalized guide to get your store up and running.
@@ -193,20 +190,225 @@
           />
         </svg>
 
-        <div class="accordion-box">
-          <div class="each-accordion">
-            <dt class="each-accordion-header" tabindex="0">
-              Customize your online store
-            </dt>
-            <dd class="each-accordion-body">
-              <p>
-                Choose a theme and add your logo, colors, and images to reflect
-                your brand.
-              </p>
-            </dd>
-          </div>
-        </div>
-      </dl>
+        <section class="accordions">
+          <dl class="accordion-box" onclick="toggleAccordion(1)">
+            <svg
+              class="accordion-bullet"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="#8A8A8A"
+                stroke-width="2.08333"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="5 5"
+              />
+            </svg>
+            <div class="each-accordion">
+              <dt class="each-accordion-header" tabindex="0">
+                Customize your online store
+              </dt>
+              <dd class="each-accordion-body">
+                <p class="each-accordion-para">
+                  Choose a theme and add your logo, colors, and images to
+                  reflect your brand. <span class="learn-more">Learn more</span>
+                </p>
+                <!-- <p class="learn-more">Learn more</p> -->
+                <div class="button-flex-group">
+                  <button class="each-accordion-button">Customize theme</button>
+                </div>
+                <figure class="each-accordion-figure">
+                  <img
+                    src="https://drive.google.com/uc?id=1nnghKp_OW-zeSbCTagmvyecazyLoUhVK"
+                    alt="online_store"
+                  />
+                </figure>
+              </dd>
+            </div>
+          </dl>
+          <dl class="accordion-box close" onclick="toggleAccordion(2)">
+            <svg
+              class="accordion-bullet"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="#8A8A8A"
+                stroke-width="2.08333"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="5 5"
+              />
+            </svg>
+            <div class="each-accordion">
+              <dt class="each-accordion-header" tabindex="0">
+                Add your first project
+              </dt>
+              <dd class="each-accordion-body active">
+                <p class="each-accordion-para">
+                  Write a description, add photos, and set pricing for the
+                  products you plan to sell.
+                  <span class="learn-more">Learn more</span>
+                </p>
+                <!-- <p class="learn-more">Learn more</p> -->
+                <div class="button-flex-group">
+                  <button class="each-accordion-button">Add product</button>
+                  <button class="each-accordion-secondary-button">
+                    Import product
+                  </button>
+                </div>
+                <figure class="each-accordion-figure">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/4b58/143c/acb5bf028fd05246508efd96e6cf90eb?Expires=1701648000&Signature=aeWiXeNYCikdajnUchvrbbi96QR~3cNF-RFmHhkTzLb0GVbP8RMyrUJNsJAMsr2Yk4FOo0sQHMTCQBAw25aczt6HgbS81PNGI9h~pKp31~cFKtIFG1F5AohgfBodS1AJqMELp2KjYhmGdRxBn-whaFlpZwIpxj7JVlol0vOrV2mPD~yWzmSNMkYE28TLLbJ1Tj5cAMiRB-wBRHM7Bv1f9w3TCcuZfhE8ILHC6AngL6fiRZpBuJtVycmgzWFvXbn~9lZ6RBXiLxZj4~~Pv9NkHDp0vWjQTIclDDUTVJTAWVNixfqI~Pare-ucVyAerF8oIQIdBG5W-4t2gz1KFqCU7w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="online_store"
+                  />
+                </figure>
+              </dd>
+            </div>
+          </dl>
+          <dl class="accordion-box close" onclick="toggleAccordion(3)">
+            <svg
+              class="accordion-bullet"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="#8A8A8A"
+                stroke-width="2.08333"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="5 5"
+              />
+            </svg>
+            <div class="each-accordion close">
+              <dt class="each-accordion-header" tabindex="0">
+                Add a custom domain
+              </dt>
+              <dd class="each-accordion-body active">
+                <p class="each-accordion-para">
+                  Your current domain is 222219.myshopify.com but you can add a
+                  custom domain to help customers find your online store.
+                  <span class="learn-more">Learn more</span>
+                </p>
+                <!-- <p class="learn-more">Learn more</p> -->
+                <div class="button-flex-group">
+                  <button class="each-accordion-button">Add domain</button>
+                </div>
+                <figure class="each-accordion-figure">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/5e94/210a/3d4af89a910961a9aa697bc1d09bee84?Expires=1701648000&Signature=GMUW7lUZz7KRY4YpAD6JMAGckXQXcHwWxeuVlrFNARM9Xu5SUzaXGLcJYC9w-YmSp4FhvYtHd5emuHNlSifFMoCNjtAHNlmCg3fb4fOkk8s7R5Do2~fverW3lvrAqrxr4RRBEa-ER1JTFmbSkLtA7OBCA2J2F6daZwSfQCFEdv~tQZs~hQdgi400ETgtWI1JfyVtvwUotJ7W1Sc0yOhmwqkhIPN9pK3Y8myp3I8UZHjCJLK5idgoYALvqGn93CHqSU9ZIxBjPfcyE6-9IdgbMhWRpi3Lo5ZogHlj4agUFdFGFrjGvQY9cVsmyuN9nAzcExyGPdEQ9PrABv3Y05GF6g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="custom domain"
+                  />
+                </figure>
+              </dd>
+            </div>
+          </dl>
+          <dl class="accordion-box close" onclick="toggleAccordion(4)">
+            <svg
+              class="accordion-bullet"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="#8A8A8A"
+                stroke-width="2.08333"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="5 5"
+              />
+            </svg>
+            <div class="each-accordion">
+              <dt class="each-accordion-header" tabindex="0">
+                Name your store
+              </dt>
+              <dd class="each-accordion-body active">
+                <p class="each-accordion-para">
+                  Your temporary store name is currently Davii collections. The
+                  store name appears in your admin and your online store.
+                  <span class="learn-more">Learn more</span>
+                </p>
+                <div class="button-flex-group">
+                  <button class="each-accordion-button">Name store</button>
+                </div>
+                <figure class="each-accordion-figure">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/8766/554f/9d1dc54d7fc938d3fcf61e3fc902d762?Expires=1701648000&Signature=dliaTHGX9oM-wIFzHKg6K7-3V5LWpIiF29-3vEl8M22rVuL8giRTpSEGbuAGCVbOYdAim3HCChmHzqtDWqpc062md0C0jquRdTT-cdI~x5kOxGR8uSiR3g7gknBjGzB0oiwGYJnf5G4ea6yfcK2P037CrK~Drgtx-NZBJCIfPjGdAGZVAhgOuYPKHJiQwMDemlXeE7YkCLvZCDzY3TuFvJGMONB-eDROLNuW-rBg2E12fFE8AG0GOojafx0GL7toZvRHMJu2bn--1bxNQwcSJJKjB2TylonWY01570J-XDP8r84MDxIfVAgsti3KKkCQYbTlz-lSFxNMJPLkCbH2VQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="name store"
+                  />
+                </figure>
+              </dd>
+            </div>
+          </dl>
+          <dl class="accordion-box close" onclick="toggleAccordion(5)">
+            <svg
+              class="accordion-bullet"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="#8A8A8A"
+                stroke-width="2.08333"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="5 5"
+              />
+            </svg>
+            <div class="each-accordion">
+              <dt class="each-accordion-header" tabindex="0">
+                Set up a payment provider
+              </dt>
+              <dd class="each-accordion-body active">
+                <p class="each-accordion-para">
+                  Choose a payment provider to start accepting payments. You’ll
+                  need to create an account with the payment provider and set it
+                  up with your Shopify store.
+                  <span class="learn-more">Learn more</span>
+                </p>
+                <div class="button-flex-group">
+                  <button class="each-accordion-button">Set up payment</button>
+                </div>
+                <figure class="each-accordion-figure">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/858d/8213/3c6ab0786a0a4656ac3dba0fe6a270b6?Expires=1701648000&Signature=TPyz~XvIHAYj4obQnheWKUaCMMmWc5GAyQ-Ezmj23P5ajrnoR4o3-y49kUys~ZIFlOYmZV8-38mVr4dEoj2WDygJubocWLlYio7tdbQ2M~pZEH16ugiGUcWbDdVYmgJRWQhH~km-EOwCv4D0OUyVnidZb8EkF1pB1ZpNeo9hCBeSsl~6mo4oka~ajwdywllRlE1pAhYMj7EIy~SbCs-TGqJr5K7Q594cjDZd0yJDRF0auf5LC70BU~McDR5JsCeI2nAPOQL3yI2OAqjBtzKbmyz8cOH7dT7FCmkzutm6oO4HTcj6PtGv-HIIlXvOwWRDFawzfQiEqWaeHwBtY4vk0w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="payment provider"
+                  />
+                </figure>
+              </dd>
+            </div>
+          </dl>
+        </section>
+      </section>
     </main>
 
     <script src="./app.js"></script>
