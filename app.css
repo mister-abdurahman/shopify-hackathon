@@ -109,7 +109,7 @@ body {
 }
 main {
   margin: 5rem auto;
-  max-width: 90rem;
+  max-width: 80rem;
   font-size: 1.5rem;
 }
 .trial_card {
@@ -283,4 +283,21 @@ main {
   font-weight: 700;
   border: none;
   cursor: pointer;
+}
+.user-store{
+  width: 35rem;
+  font-size: 1.3rem;
+  background-color: #fff;
+  padding: .75rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 8rem;
+  right: 2rem;
+}
+.user-store-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin: 1.3rem .8rem;
+  list-style: none;
 }
