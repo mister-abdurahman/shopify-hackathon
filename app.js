@@ -13,3 +13,35 @@ function toggleAccordion(index) {
     }
   });
 }
+
+function showNotification() {
+  const notificationBox = document.querySelector(".user-store");
+  const usernameBox = document.querySelector(".header-username-box");
+
+  notificationBox.style.display = "block";
+  usernameBox.style.backgroundColor = "#656266";
+}
+
+function hideNotification() {
+  const notificationBox = document.querySelector(".user-store");
+  const usernameBox = document.querySelector(".header-username-box");
+
+  notificationBox.style.display = "none";
+  usernameBox.style.backgroundColor = "#49484a";
+}
+
+function showAlert() {
+  const alertBox = document.querySelector(".user-alert");
+  const notificationIcon = document.querySelector(".header-notification");
+
+  alertBox.style.display = "block";
+  notificationIcon.style.backgroundColor = "#656266";
+}
+
+function hideAlert() {
+  const alertBox = document.querySelector(".user-alert");
+  const notificationIcon = document.querySelector(".header-notification");
+
+  alertBox.style.display = "none";
+  notificationIcon.style.backgroundColor = "#49484a";
+}
