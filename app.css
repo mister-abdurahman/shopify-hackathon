@@ -356,9 +356,15 @@ hr {
 .user-store-email {
   color: var(--bg-gray-50);
 }
-/* .show-notification:hover .user-store-username-box {
-  display: block;
-} */
+.user-alert::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -1rem;
+  width: 40rem;
+  height: 2rem;
+  background-color: transparent;
+}
 .user-alert {
   display: none;
   width: 40rem;
